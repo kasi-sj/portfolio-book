@@ -103,6 +103,7 @@ export default function MyBook() {
               onFlip={onFlip}
               onInit={onInit}
               showCover={true}
+              usePortrait={false}
             >
               <Page number={1} title="📖 Cover Page">
                 <Cover />
