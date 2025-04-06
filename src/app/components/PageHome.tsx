@@ -10,16 +10,16 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col items-center w-full px-6 sm:px-10 md:px-20 overflow-y-auto py-10"
+      className="relative flex flex-col items-center w-full px-6 sm:px-10 md:px-20 overflow-y-auto py-5 xl:py-10"
     >
       {/* About Me Section */}
       <div className="max-w-3xl text-center">
         {/* About Me Section */}
         <div className="text-left max-w-2xl mx-auto">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
+          <h2 className="text-lg xl:text-2xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
             About Me
           </h2>
-          <p className="text-sm sm:text-base text-gray-700 mt-4 leading-relaxed">
+          <p className="text-sm xl:text-base text-gray-700 mt-4 leading-relaxed">
             Hi, I’m Kasinathan S J, a competitive programmer with a keen
             interest in web development. I have strong skills in Java and
             JavaScript programming languages. My passion for coding has led me
@@ -33,8 +33,8 @@ const Home = () => {
         </div>
 
         {/* Area of Interests Section */}
-        <div className="mt-10 text-left max-w-2xl mx-auto">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
+        <div className="mt-2 xl:mt-10 text-left max-w-2xl mx-auto">
+          <h2 className="text-lg xl:text-2xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
             Area of Interests
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mt-4">
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
         {/* Social Links Section */}
         <div className="mt-10 text-left">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
+          <h2 className="text-lg xl:text-2xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
             Connect with me
           </h2>
           <div className="flex justify-start gap-6">

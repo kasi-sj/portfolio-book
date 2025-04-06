@@ -11,7 +11,7 @@ const PageCertifications: React.FC<PageCertificationsProps> = ({ page }) => {
   if (currentCerts.length === 0) return null;
 
   return (
-    <div className="w-full h-full p-10 px-14 font-serif text-left overflow-y-auto bg-cover">
+    <div className="w-full h-full p-5 xl:p-10 px-14 font-serif text-left overflow-y-auto bg-cover">
       <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-gray-300">
         Certifications
       </h2>
@@ -34,11 +34,13 @@ const PageCertifications: React.FC<PageCertificationsProps> = ({ page }) => {
                 <p className="text-sm text-gray-700 italic">
                   {cert.description}
                 </p>
-                <ul className="mt-2 list-disc list-inside text-sm text-gray-800 space-y-1">
+                <div className="mt-2 grid grid-cols-2 gap-2 text-sm text-gray-800">
                   {cert.skills.map((skill, i) => (
-                    <li key={i}>{skill}</li>
+                    <div key={i} className="flex items-center">
+                      <span>• {skill}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
                 <a
                   href={cert.link}
                   target="_blank"

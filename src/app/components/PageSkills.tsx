@@ -15,8 +15,8 @@ const PageSkills = ({ range }: PageSkillsProps) => {
     range === "first" ? entries.slice(0, 3) : entries.slice(3);
 
   return (
-    <div className="w-full h-full p-10 px-14 font-serif text-left overflow-y-auto bg-[url('/paper-texture.png')] bg-cover">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-gray-300 ">
+    <div className="w-full h-full p-5 xl:p-10 px-14 font-serif text-left overflow-y-auto bg-[url('/paper-texture.png')] bg-cover">
+      <h2 className="text-lg xl:text-2xl font-semibold text-gray-900 mb-4 border-b border-gray-300 ">
         Skills
       </h2>
       <div className="space-y-12">
@@ -37,7 +37,7 @@ const PageSkills = ({ range }: PageSkillsProps) => {
                   {skills.description}
                 </p>
               )}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 grid-cols-3 gap-6">
                 {chunkedSkills.map((chunk, index) => (
                   <ul key={index} className="space-y-2">
                     {chunk.map((skill) => (

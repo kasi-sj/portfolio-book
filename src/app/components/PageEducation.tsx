@@ -27,8 +27,8 @@ const educationData = [
 
 const PageEducation = () => {
   return (
-    <div>
-      <div className="w-full min-h-screen p-10 px-14 text-left font-serif">
+    <div className="w-full">
+      <div className="w-full min-h-screen p-5 xl:p-10 px-14 text-left  font-serif">
         {/* Education Section */}
         <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-gray-300">
           Education
@@ -38,13 +38,19 @@ const PageEducation = () => {
             {educationData.map((education, index) => (
               <div
                 key={index}
-                className={`relative mb-12 ml-6 ${index === educationData.length - 1 ? '' : 'border-b'}`}
+                className={`relative mb-12 ml-6 ${
+                  index === educationData.length - 1 ? "" : "border-b"
+                }`}
               >
                 <div
                   className={`absolute w-3 h-3 bg-${education.color}-600 rounded-full -left-8 top-8.5`}
                 />
-                <h3 className="text-lg font-semibold text-gray-800">{education.level}</h3>
-                <p className="text-sm text-gray-600 italic">{education.years}</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {education.level}
+                </h3>
+                <p className="text-sm text-gray-600 italic">
+                  {education.years}
+                </p>
                 <p className="text-base text-gray-700">{education.school}</p>
                 {education.degree && (
                   <p className="text-base text-gray-700">{education.degree}</p>

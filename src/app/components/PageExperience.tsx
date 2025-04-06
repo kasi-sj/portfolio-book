@@ -13,7 +13,7 @@ const experienceData = [
 const PageExperience = () => {
   return (
     <div className=" w-full">
-      <div className="w-full min-h-screen p-10 px-14 text-left font-serif">
+      <div className="w-full min-h-screen p-5 xl:p-10 px-14 text-left font-serif">
         {/* Experience Section */}
         <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-gray-300">
           Experience

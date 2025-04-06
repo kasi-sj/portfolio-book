@@ -17,7 +17,7 @@ const PageProjects = ({ page }: PageProjectsProps) => {
   if (!project) return null;
 
   return (
-    <div className="w-full h-full p-10 px-14 font-serif text-left overflow-y-auto bg-[url('/paper-texture.png')] bg-cover">
+    <div className="w-full h-full p-5 xl:p-10 px-14 font-serif text-left overflow-y-auto bg-[url('/paper-texture.png')] bg-cover">
       <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-gray-300 ">
         Project #{page}
       </h2>

@@ -35,7 +35,7 @@ export default function MyBook() {
 
   // jumpToPage is passed to the BookIndex to jump to a specific page.
   const jumpToPage = (pageIndex: number) => {
-    bookRef.current?.pageFlip()?.flip(pageIndex+1);
+    bookRef.current?.pageFlip()?.flip(pageIndex + 1);
   };
 
   // Handle key press events to navigate
@@ -75,19 +75,23 @@ export default function MyBook() {
         </button>
       )}
 
-      <div
-        className="absolute top-1/2 left-1/8 transform text-5xl text-gray-200 font-bold italic z-1"
-        style={{ fontFamily: "Dancing Script, cursive" }}
-      >
-        <span>Welcome to My Portfolio</span>
-      </div>
+      {clientWidth > 1000 && (
+        <>
+          <div
+            className="absolute top-1/2 left-4.5 transform text-5xl text-gray-200 font-bold italic z-1"
+            style={{ fontFamily: "Dancing Script, cursive" }}
+          >
+            <span>Welcome to My Portfolio</span>
+          </div>
 
-      <div
-        className="absolute top-1/2 right-1/6 transform text-5xl text-gray-200 font-bold italic z-1"
-        style={{ fontFamily: "Dancing Script, cursive" }}
-      >
-        <span>Thank you</span>
-      </div>
+          <div
+            className="absolute top-1/2 right-1/6 transform text-5xl text-gray-200 font-bold italic z-1"
+            style={{ fontFamily: "Dancing Script, cursive" }}
+          >
+            <span>Thank you</span>
+          </div>
+        </>
+      )}
 
       <div
         className="flex justify-center items-center w-full h-full"
@@ -103,14 +107,14 @@ export default function MyBook() {
             {/* @ts-expect-error: TypeScript may throw an error related to the pageFlip ref */}
             <HTMLFlipBook
               ref={bookRef}
-              width={clientWidth >= 768 ? clientWidth / 2 : clientWidth}
+              width={clientWidth >= 1000 ? clientWidth / 2 : clientWidth}
               height={clientHeight}
               mobileScrollSupport={false}
               className="rounded-xl shadow-2xl z-10"
               onFlip={onFlip}
               onInit={onInit}
               showCover={true}
-              usePortrait={clientWidth < 768}
+              usePortrait={clientWidth < 1000}
             >
               <Page number={1} title="📖 Cover Page">
                 <Cover />
