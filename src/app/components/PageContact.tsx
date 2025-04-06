@@ -22,7 +22,7 @@ const ContactPage = () => {
           <FaPhone size={24} className="text-blue-600" />
           <a
             href="tel:+919080725679"
-            className="text-lg sm:text-xl text-gray-800 hover:text-blue-600"
+            className="text-base sm:text-lg text-gray-800 hover:text-blue-600"
           >
             +91 9080725679
           </a>
@@ -33,7 +33,7 @@ const ContactPage = () => {
           <SiGmail size={24} className="text-blue-600" />
           <a
             href="mailto:kasinathansj@gmail.com"
-            className="text-lg sm:text-xl text-gray-800 hover:text-blue-600"
+            className="text-base sm:text-lg text-gray-800 hover:text-blue-600"
           >
             kasinathansj@gmail.com
           </a>
@@ -46,7 +46,7 @@ const ContactPage = () => {
             href="https://www.google.com/maps/place/Madurai,+Tamil+Nadu,+India"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg sm:text-xl text-gray-800 hover:text-blue-600"
+            className="text-base sm:text-lg text-gray-800 hover:text-blue-600"
           >
             Madurai, Tamil Nadu, India
           </a>

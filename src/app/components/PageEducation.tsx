@@ -43,11 +43,11 @@ const PageEducation = () => {
                 <div
                   className={`absolute w-3 h-3 bg-${education.color}-600 rounded-full -left-8 top-8.5`}
                 />
-                <h3 className="text-xl font-semibold text-gray-800">{education.level}</h3>
+                <h3 className="text-lg font-semibold text-gray-800">{education.level}</h3>
                 <p className="text-sm text-gray-600 italic">{education.years}</p>
-                <p className="text-md text-gray-700">{education.school}</p>
+                <p className="text-base text-gray-700">{education.school}</p>
                 {education.degree && (
-                  <p className="text-md text-gray-700">{education.degree}</p>
+                  <p className="text-base text-gray-700">{education.degree}</p>
                 )}
                 <p className="text-sm text-gray-500">{education.location}</p>
               </div>

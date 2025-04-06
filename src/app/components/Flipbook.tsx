@@ -11,6 +11,8 @@ import PageEducation from "./PageEducation";
 import PageExperience from "./PageExperience";
 import PageAchievements from "./PageAchievement";
 import PageContact from "./PageContact";
+import BookIndex from "./BookIndex";
+import PageCertifications from "./PageCertification";
 
 export default function MyBook() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -29,6 +31,11 @@ export default function MyBook() {
   const onInit = () => {
     const pageCount = bookRef.current.pageFlip().getPageCount();
     setTotalPages(pageCount);
+  };
+
+  // jumpToPage is passed to the BookIndex to jump to a specific page.
+  const jumpToPage = (pageIndex: number) => {
+    bookRef.current?.pageFlip()?.flip(pageIndex+1);
   };
 
   // Handle key press events to navigate
@@ -96,55 +103,67 @@ export default function MyBook() {
             {/* @ts-expect-error: TypeScript may throw an error related to the pageFlip ref */}
             <HTMLFlipBook
               ref={bookRef}
-              width={clientWidth / 2}
+              width={clientWidth >= 768 ? clientWidth / 2 : clientWidth}
               height={clientHeight}
               mobileScrollSupport={false}
               className="rounded-xl shadow-2xl z-10"
               onFlip={onFlip}
               onInit={onInit}
               showCover={true}
-              usePortrait={false}
+              usePortrait={clientWidth < 768}
             >
               <Page number={1} title="📖 Cover Page">
                 <Cover />
               </Page>
-              <Page number={2} title="🏠 Home">
+              <Page number={2} title="📑 Index">
+                <BookIndex jumpToPage={jumpToPage} />
+              </Page>
+              <Page number={3} title="🏠 Home">
                 <PageHome />
               </Page>
-              <Page number={3} title="💡 Skills">
+              <Page number={4} title="💡 Skills">
                 <PageSkills range="first" />
               </Page>
-              <Page number={4} title="💡 Skills">
+              <Page number={5} title="💡 Skills">
                 <PageSkills range="second" />
               </Page>
-              <Page number={5} title="🛠️💻 Projects">
+              <Page number={6} title="🛠️💻 Projects">
                 <PageProjects page={1} />
               </Page>
-              <Page number={6} title="🛠️💻 Projects">
+              <Page number={7} title="🛠️💻 Projects">
                 <PageProjects page={2} />
               </Page>
-              <Page number={7} title="🛠️💻 Projects">
+              <Page number={8} title="🛠️💻 Projects">
                 <PageProjects page={3} />
               </Page>
-              <Page number={8} title="🛠️💻 Projects">
+              <Page number={9} title="🛠️💻 Projects">
                 <PageProjects page={4} />
               </Page>
-              <Page number={9} title="🛠️💻 Projects">
+              <Page number={10} title="🛠️💻 Projects">
                 <PageProjects page={5} />
               </Page>
-              <Page number={13} title="🎓📚 Educations">
+              <Page number={11} title="🎓📚 Educations">
                 <PageEducation />
               </Page>
-              <Page number={14} title="💼🛠️ Experiences">
+              <Page number={12} title="💼🛠️ Experiences">
                 <PageExperience />
               </Page>
-              <Page number={15} title="🏆🌟 Achievements">
+              <Page number={13} title="🏆🌟 Achievements">
                 <PageAchievements page={1} />
               </Page>
-              <Page number={16} title="🏆🌟 Achievements">
+              <Page number={14} title="🏆🌟 Achievements">
                 <PageAchievements page={2} />
               </Page>
-              <Page number={17} title="📞✉️ Contact">
+              <Page number={15} title="📜 Certifications">
+                <PageCertifications page={1} />
+              </Page>
+              <Page number={16} title="📜 Certifications">
+                <PageCertifications page={2} />
+              </Page>
+              <Page number={17} title="📜 Certifications">
+                <PageCertifications page={3} />
+              </Page>
+              <Page number={18} title="📞✉️ Contact">
                 <PageContact />
               </Page>
             </HTMLFlipBook>

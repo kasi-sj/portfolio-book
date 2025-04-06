@@ -45,7 +45,7 @@ const PageSkills = ({ range }: PageSkillsProps) => {
                         key={skill.name}
                         className="flex items-center gap-2 text-sm text-gray-700"
                       >
-                        <BadgeCheck size={14} className="text-blue-600" />
+                        <skill.icon size={14} className="text-blue-600" />
                         <span>{skill.name}</span>
                       </li>
                     ))}

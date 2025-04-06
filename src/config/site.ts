@@ -1,6 +1,6 @@
 import { SiLeetcode, SiPostgresql } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
-import { FaGithub } from "react-icons/fa6";
+import { FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaHtml5 } from "react-icons/fa";
@@ -34,7 +34,6 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiRubyonrails } from "react-icons/si";
 import { SiRedis } from "react-icons/si";
 import { SiHuggingface } from "react-icons/si";
-
 
 export type SiteConfig = typeof siteConfig;
 
@@ -74,8 +73,12 @@ export const siteConfig = {
       icon: BiLogoGmail,
       link: "mailto:kasinathansj@gmail.com",
     },
+    {
+      name: "Instagram",
+      icon: FaInstagram,
+      link: "https://www.instagram.com/kasinathan_sj",
+    },
   ],
-
 };
 
 export const achievements = [
@@ -83,9 +86,9 @@ export const achievements = [
     image: "/codechef.png",
     genere: "Competitive Coding",
     points: [
-      "Starters 118 Division 2 Global Rank 14",
-      "620+ problems",
-      "5⭐ Max rating 📈 2013",
+      "Starters 179 Division 1 Global Rank 39",
+      "680+ problems",
+      "5⭐ Max rating 📈 2076",
     ],
     link: "https://www.codechef.com/users/kasinathansj",
   },
@@ -95,7 +98,7 @@ export const achievements = [
     points: [
       "Global Rank 62 in Biweekly Contest 124",
       "1400+ problems",
-      "Guardian Max rating 📈 2463",
+      "Guardian Max rating 📈 2518",
     ],
     link: "https://leetcode.com/kasinathansj/",
   },
@@ -109,12 +112,13 @@ export const achievements = [
     ],
     link: "https://auth.geeksforgeeks.org/user/kasinathansj",
   },
-]
+];
 
 export const skills = [
   {
     title: "Front-end",
-    description: "Skills related to the front-end development of web applications.",
+    description:
+      "Skills related to the front-end development of web applications.",
     list: [
       {
         name: "HTML",
@@ -156,7 +160,8 @@ export const skills = [
   },
   {
     title: "Back-end",
-    description: "Skills related to the back-end development of web applications.",
+    description:
+      "Skills related to the back-end development of web applications.",
     list: [
       {
         name: "javascript",
@@ -239,7 +244,7 @@ export const skills = [
       {
         name: "JavaScript",
         icon: IoLogoJavascript,
-      }
+      },
     ],
   },
   {
@@ -262,19 +267,32 @@ export const skills = [
         name: "VS Code",
         icon: VscVscode,
       },
+      {
+        name: "Redis",
+        icon: SiRedis,
+      },
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "petitionAI",
+    title: "PetitAI",
     description:
       "An end-to-end platform for AI-powered petition processing and management, combining NLP, machine learning, and distributed systems.",
-    image: "/petitionAI.jpg",
+    image: "/petitionAi.jpg",
     link: "https://petitionai.vercel.app/",
     github: "https://github.com/kasi-sj/PetitAI",
-    icons : [ SiSpringboot ,   RiNextjsFill , SiMongodb , SiPostgresql , SiRedis , SiHuggingface , FaDocker , SiShadcnui]
+    icons: [
+      SiSpringboot,
+      RiNextjsFill,
+      SiMongodb,
+      SiPostgresql,
+      SiRedis,
+      SiHuggingface,
+      FaDocker,
+      SiShadcnui,
+    ],
   },
   {
     title: "linkedIn Mobile Clone",
@@ -283,15 +301,35 @@ export const projects = [
     image: "/linkedin.jpg",
     link: "https://drive.google.com/file/d/1CD9dW9xP07d_11vvH-n3OTYFmCN8GM9U/view?usp=sharing",
     github: "https://github.com/kasi-sj/linkedin-clone",
-    icons : [SiExpo , TbBrandReactNative , IoLogoFirebase , SiSocketdotio ,DiNodejs , SiExpress , SiRedux ,SiMongodb ]
+    icons: [
+      SiExpo,
+      TbBrandReactNative,
+      IoLogoFirebase,
+      SiSocketdotio,
+      DiNodejs,
+      SiExpress,
+      SiRedux,
+      SiMongodb,
+    ],
   },
   {
     title: "TrackMe",
-    description: "TrackMe is a comprehensive project that includes a backend server, a frontend web application, and a browser extension. The project is designed to track user screen time, provide insights into browsing habits, and manage website access restrictions.",
+    description:
+      "TrackMe is a comprehensive project that includes a backend server, a frontend web application, and a browser extension. The project is designed to track user screen time, provide insights into browsing habits, and manage website access restrictions.",
     image: "/trackme.png",
     link: "https://trackme-web-jade.vercel.app/",
     github: "https://github.com/kasi-sj/TrackMe",
-    icons : [ SiRubyonrails , SiNextui , RiNextjsFill , RiTailwindCssFill ,FaHtml5 , IoLogoCss3 , IoLogoJavascript, FaDocker ,DiPostgresql ]
+    icons: [
+      SiRubyonrails,
+      SiNextui,
+      RiNextjsFill,
+      RiTailwindCssFill,
+      FaHtml5,
+      IoLogoCss3,
+      IoLogoJavascript,
+      FaDocker,
+      DiPostgresql,
+    ],
   },
   {
     title: "CodeSync",
@@ -300,7 +338,14 @@ export const projects = [
     image: "/code-sync.png",
     link: "https://code-sync-website.vercel.app/",
     github: "https://github.com/kasi-sj/code-sync",
-    icons : [SiTauri , SiNextui , RiNextjsFill , RiTailwindCssFill ,SiSocketdotio,DiPostgresql ]
+    icons: [
+      SiTauri,
+      SiNextui,
+      RiNextjsFill,
+      RiTailwindCssFill,
+      SiSocketdotio,
+      DiPostgresql,
+    ],
   },
   {
     title: "JobMagnet",
@@ -309,6 +354,64 @@ export const projects = [
     image: "/jobmagnet.png",
     link: "https://jobmagnet.vercel.app/",
     github: "https://github.com/kasi-sj/jobmagnet",
-    icons : [  DiNodejs , SiExpress , RiNextjsFill ,RiTailwindCssFill , SiMongodb , SiShadcnui]
+    icons: [
+      DiNodejs,
+      SiExpress,
+      RiNextjsFill,
+      RiTailwindCssFill,
+      SiMongodb,
+      SiShadcnui,
+    ],
+  },
+];
+
+export const Certifications = [
+  {
+    title: "Google IT Support",
+    description: "Google IT Support from Coursera",
+    image: "/google-it-support.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/specialization/8B4WXFZ5BDA3",
+    skills: ["Network Protocols", "Encryption Algorithms and Techniques"],
+  },
+  {
+    title: "Meta Front-End Developer",
+    description: "Meta Front-End Developer from Coursera",
+    image: "/meta-frontend.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/ECL45PGJF236",
+    skills: [
+      "Cascading Style Sheets (CSS)",
+      "JavaScript",
+      "UI/UX design",
+      "HTML",
+      "React",
+    ],
+  },
+  {
+    title: "Web Development Bootcamp",
+    description: "Web Development Bootcamp from Udemy",
+    image: "/udemy-web-bootcamp.jpeg",
+    link: "https://www.udemy.com/certificate/UC-cfea4489-6432-482c-8ce2-bbefe35ab629/",
+    skills: [
+      "Express.js",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "jQuery",
+      "Bootstrap (Framework)",
+    ],
+  },
+  {
+    title: "Problem Solving (Intermediate)",
+    description: "Problem Solving (Intermediate) from HackerRank",
+    image: "/problem-solving-intermediate.png",
+    link: "https://www.hackerrank.com/certificates/f32464092680",
+    skills: ["Problem Solving Techniques", "Algorithms", "Data Structures"],
+  },
+  {
+    title: "SQL (Intermediate)",
+    description: "SQL (Intermediate) from HackerRank",
+    image: "/sql-intermediate.png",
+    link: "https://www.hackerrank.com/certificates/203d869c405b",
+    skills: ["SQL Queries", "Data Manipulation", "Database Management"],
   },
 ];

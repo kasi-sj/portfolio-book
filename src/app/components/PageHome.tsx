@@ -16,7 +16,7 @@ const Home = () => {
       <div className="max-w-3xl text-center">
         {/* About Me Section */}
         <div className="text-left max-w-2xl mx-auto">
-          <h2 className="text-xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-2 border-b border-gray-300 pb-1">
             About Me
           </h2>
           <p className="text-sm sm:text-base text-gray-700 mt-4 leading-relaxed">

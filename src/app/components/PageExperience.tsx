@@ -28,11 +28,11 @@ const PageExperience = () => {
                 <div
                   className={`absolute w-3 h-3 bg-${experience.color}-600 rounded-full -left-8 top-8.5`}
                 />
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-lg font-semibold text-gray-800">
                   {experience.role}
                 </h3>
                 <p className="text-sm text-gray-600 italic">{experience.duration}</p>
-                <p className="text-md text-gray-700">{experience.company}</p>
+                <p className="text-base text-gray-700">{experience.company}</p>
                 <p className="text-sm text-gray-500">{experience.location}</p>
               </div>
             ))}

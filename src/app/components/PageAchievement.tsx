@@ -32,7 +32,7 @@ const PageAchievements = ({ page }: PageAchievementsProps) => {
                   width={100}
                   height={100}
                   alt={`${achievement.genere} logo`}
-                  className="w-30 h-30 object-contain"
+                  className="w-35 h-35 object-contain"
                 />
                 <h3 className="text-lg font-semibold text-blue-900 underline decoration-blue-400 underline-offset-4">
                   {achievement.genere}
