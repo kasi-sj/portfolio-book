@@ -1,4 +1,4 @@
-import { SiLeetcode, SiPostgresql } from "react-icons/si";
+import { SiApachekafka, SiLeetcode, SiPostgresql } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
 import { FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -288,7 +288,7 @@ export const projects = [
       RiNextjsFill,
       SiMongodb,
       SiPostgresql,
-      SiRedis,
+      SiApachekafka,
       SiHuggingface,
       FaDocker,
       SiShadcnui,
