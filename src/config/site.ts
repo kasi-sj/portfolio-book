@@ -271,6 +271,10 @@ export const skills = [
         name: "Redis",
         icon: SiRedis,
       },
+      {
+        name: "Apache Kafka",
+        icon: SiApachekafka,
+      },
     ],
   },
 ];
