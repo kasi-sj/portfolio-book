@@ -283,7 +283,7 @@ export const projects = [
   {
     title: "PetitAI",
     description:
-      "An end-to-end platform for AI-powered petition processing and management, combining NLP, machine learning, and distributed systems.",
+      "PetitAI is a full-fledged, AI-powered platform designed to streamline petition creation, processing, and management using modern web technologies, distributed systems, and machine learning. It brings together a user-friendly interface with robust backend services to automate the petition workflow from submission to resolution.",
     image: "/petitionAi.jpg",
     link: "https://petitionai.vercel.app/",
     github: "https://github.com/kasi-sj/PetitAI",
