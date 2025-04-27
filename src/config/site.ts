@@ -1,4 +1,4 @@
-import { SiApachekafka, SiLeetcode, SiPostgresql } from "react-icons/si";
+import { SiApachekafka, SiLeetcode, SiPostgresql, SiMysql } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
 import { FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -24,7 +24,7 @@ import { TbBrandCpp } from "react-icons/tb";
 import { SiPostman } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
+import { VscVscode, VscSymbolArray, VscSymbolMethod, VscSymbolClass, VscTypeHierarchySub, VscSymbolStructure } from "react-icons/vsc";
 import { SiSpringboot } from "react-icons/si";
 import { SiTauri } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
@@ -191,12 +191,6 @@ export const skills = [
         name: "Auth.js",
         icon: TbBrandOauth,
       },
-    ],
-  },
-  {
-    title: "Database",
-    description: "Skills related to database management and data storage.",
-    list: [
       {
         name: "MongoDB",
         icon: SiMongodb,
@@ -204,6 +198,33 @@ export const skills = [
       {
         name: "PostgreSQL",
         icon: DiPostgresql,
+      },
+    ],
+  },
+  {
+    title: "CORE",
+    description: "Skills related to core computer science concepts.",
+    list: [
+      {
+        name: "Data Structures",
+        icon: VscSymbolArray,
+      },
+      {
+        name: "Algorithms",
+        icon: VscSymbolMethod,
+      },
+      {
+        name: "DBMS",
+        icon: SiMysql,
+      },
+      {
+        name: "OOPS",
+        icon: VscSymbolClass,
+      },
+      { name: "HLD", icon: VscTypeHierarchySub },
+      {
+        name: "LLD",
+        icon: VscSymbolStructure,
       },
     ],
   },
